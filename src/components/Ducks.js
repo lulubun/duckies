@@ -4,10 +4,10 @@ import DuckCard from "./DuckCard";
 
 const Ducks = (props) => {
   const {images} = props;
-  const imgArr = Object.keys(images)
+  const imgArr = images && Object.entries(images).sort((a, b) => b[1].upvotes - a[1].upvotes);
   return (
-    imgArr.length > 0 ? imgArr.map((i) => {
-    return (<DuckCard data={images[i]} key={i} {...props} />)
+    imgArr && imgArr.length > 0 ? imgArr.map((i) => {
+    return (<DuckCard data={i[1]} key={i[0]} {...props} id={i[0]}/>)
   }) : null
   );
 }

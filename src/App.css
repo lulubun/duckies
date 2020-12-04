@@ -7,13 +7,20 @@
 
 .duck_image {
   max-width: 300px;
+  border-radius: 10px;
 }
 
 .duck_card {
-  border: 1px solid yellow;
+  border: 1px solid #504800;
   margin: 10px;
   padding: 0 10px;
   max-width: 300px;
+  background-color: #FFF275;
+  border-radius: 10px;
+}
+
+.duck_headline {
+  margin: 8px;
 }
 
 .arrow {
@@ -32,20 +39,37 @@
 
 .sign_in {
   position: fixed;
-  top: 10px;
+  top: 20px;
   z-index: 100;
   width: 75vw;
-  height: 75vh;
-  background-color: aliceblue;
+  max-width: 500px;
+  height: 80vh;
+  background-color: #6B9080;
   display: flex;
   flex-direction: column;
   align-items: center;
+  border-radius: 10px;
+}
+
+.sign_in_submit {
+  margin: 5px;
+}
+
+.cancel_button {
+  position: absolute;
+  bottom: 10px;
+  border: 0px;
+  background-color: transparent;
+}
+
+.rounded {
+  border-radius: 4px;
 }
 
 .header {
   width: 100vw;
   height: 50px;
-  background-color: blue;
+  background-color: #009FFD;
   border-bottom: 1px solid black;
   display: flex;
   flex-direction: row-reverse;
