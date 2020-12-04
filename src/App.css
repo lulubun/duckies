@@ -1,38 +1,56 @@
 .App {
   text-align: center;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.duck_image {
+  max-width: 300px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.duck_card {
+  border: 1px solid yellow;
+  margin: 10px;
+  padding: 0 10px;
+  max-width: 300px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.arrow {
+  max-height: 20px;
+}
+
+.arrow_button {
+  background-color: transparent;
+  border: 0px;
+}
+
+.stats {
+  display: flex;
+  font-weight: bolder;
+}
+
+.sign_in {
+  position: fixed;
+  top: 10px;
+  z-index: 100;
+  width: 75vw;
+  height: 75vh;
+  background-color: aliceblue;
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.header {
+  width: 100vw;
+  height: 50px;
+  background-color: blue;
+  border-bottom: 1px solid black;
+  display: flex;
+  flex-direction: row-reverse;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.signin_button {
+  margin: 5px 15px;
 }
